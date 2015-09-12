@@ -127,7 +127,25 @@ by Prelude.")
 (message "Prelude is ready to do thy bidding, Master %s!" current-user)
 
 (prelude-eval-after-init
- ;; greet the use with some useful tip
- (run-at-time 5 nil 'prelude-tip-of-the-day))
+;; greet the use with some useful tip
+  (run-at-time 5 nil 'prelude-tip-of-the-day))
+
+;; my customizations
+
+;;(disable-theme 'zenburn)
+;;(load-theme 'solarized-dark t)
+(global-linum-mode t)
+(require 'prelude-evil)
+(require 'prelude-haskell)
+
+;; turn off line highlighting (default from prelude)
+;; (remove-hook 'prog-mode-hook 'esk-turn-on-hl-line-mode)
+(global-hl-line-mode -1)
+
+(set-face-attribute 'default nil :height 140)
+
+;; Load ProofGeneral
+;;
+(load-file "~/.frameworks/ProofGeneral/generic/proof-site.el")
 
 ;;; init.el ends here

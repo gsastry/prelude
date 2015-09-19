@@ -20,7 +20,7 @@
 
 ;; Load ProofGeneral
 ;;
-(load-file "~/.frameworks/ProofGeneral/generic/proof-site.el")
+(load-file "~/.frameworks/ProofGeneral-4.3pre150313/generic/proof-site.el")
 
 
 ;;;;; Theme ;;;;;

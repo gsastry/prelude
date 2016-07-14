@@ -110,6 +110,9 @@ by Prelude.")
 (when (eq system-type 'darwin)
   (require 'prelude-osx))
 
+;; To launch emacsclient from shell
+(server-start)
+
 (message "Loading Prelude's modules...")
 
 ;; the modules
